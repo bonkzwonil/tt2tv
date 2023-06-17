@@ -7,6 +7,14 @@ import pandas as pd
 
 df = pd.read_csv('tw.csv', sep=',')
 
+#preamble
+print("// © traderbonk")
+
+print("//@version=5")
+print("indicator(\"Tastytrade fills\", overlay = true)")
+
+print("")
+
 ## Create pine script
 for index, row in df.iterrows():
     if row['Type'] == "Trade":
