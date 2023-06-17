@@ -23,3 +23,5 @@ if syminfo.ticker(syminfo.tickerid) == "AMZN"
 ```
 
 
+copy result into a TradingView Pine Script Buffer
+
