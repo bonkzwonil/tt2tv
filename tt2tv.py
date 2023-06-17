@@ -5,7 +5,7 @@ import numpy as np
 import pandas as pd
 
 
-df = pd.read_csv('tw.csv', sep=',')
+df = pd.read_csv('tw.csv', sep=',', usecols = ['Date', 'Type', 'Average Price', 'Symbol', 'Action'], thousands = ',' , dtype = {'Average Price': np.float32})
 
 #preamble
 print("// © traderbonk")
